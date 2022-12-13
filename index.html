@@ -10,9 +10,9 @@
     <link rel="icon" type="image/x-icon" href="src/img/playstation-icon.svg">
     <title>PlayStation</title>
 </head>
-<body class="overflow-x-hidden">
+<body class="w-full overflow-x-hidden">
     <section id="main">
-        <div class="w-full h-auto flex justify-between bg-black text-white font-gilroy-medium">
+        <div class="w-full h-screen flex justify-between bg-black text-white font-gilroy-medium overflow-x-hidden">
             <div class="hidden w-1/12 flex flex-col justify-center items-center lg:block">
                 <div class="w-full h-2/6 flex justify-center items-start">
                     <img class="mt-4 w-6 h-6" src="src/img/playstation-icon.png" alt="">
@@ -71,10 +71,10 @@
                             <games class="rounded-2xl cursor-pointer hover:shadow-all-grand" background="bg-ghost" title="Ghost of Tsushima" :hours="112"></games>
                             <games class="rounded-2xl cursor-pointer hover:shadow-all-grand" background="bg-horizon" title="Horizon Zero Dawn" :hours="68"></games>
                             <games class="rounded-2xl cursor-pointer hover:shadow-all-grand" background="bg-ratchet" title="Ratchet and Clank" :hours="35"></games>
-                        </div>  
+                        </div>
                     </div>
-                    <div class="w-full flex justify-between my-2">
-                        <div class="w-2/6 h-60 mx-2 p-4 bg-white bg-opacity-10 backdrop-blur-xl rounded-xl shadow-all">
+                    <div class="w-full flex flex-col lg:flex-row justify-between my-2">
+                        <div class="w-full lg:w-2/6 h-60 mb-5 mx-2 p-4 bg-white bg-opacity-10 backdrop-blur-xl rounded-xl shadow-all">
                             <div class="w-full h-1/6 flex justify-between">
                                 <h2 class="w-5/6">Accessories</h2>
                                 <div><i class='bx bx-right-arrow-alt w-1/6 cursor-pointer hover:text-slate-300'></i></div>
@@ -83,7 +83,7 @@
                                 <img class="w-36 h-auto" src="src/img/headphones.png">
                             </div>
                         </div>
-                        <div class="w-4/6 mx-2 p-4 bg-white bg-opacity-10 backdrop-blur-xl rounded-xl shadow-all">
+                        <div class="w-full lg:w-4/6 mx-2 mb-5 p-4 bg-white bg-opacity-10 backdrop-blur-xl rounded-xl shadow-all">
                             <div class="w-full h-1/6 flex justify-between">
                                 <h2 class="w-5/6">Library</h2>
                                 <div><i class='bx bx-right-arrow-alt w-1/6 cursor-pointer hover:text-slate-300'></i></div>
@@ -101,7 +101,7 @@
                                                 <h3 class="text-xs">12 Dec</h3>
                                                 <h3 class="text-xs">2020</h3>
                                             </td>
-                                            <td class="w-2/6 flex justify-center items-center"><button class="w-[130px] h-8 border-2 border-blue-600 text-blue-600 rounded-lg cursor-pointer hover:border-blue-500 hover:text-blue-500">Download</button></td>
+                                            <td class="w-2/6 flex justify-center items-center"><button class="w-[100px] lg:w-[130px] h-8 border-2 border-blue-600 text-blue-600 rounded-lg cursor-pointer hover:border-blue-500 hover:text-blue-500">Download</button></td>
                                         </tr>
                                         <tr class="w-full h-1/3 flex justify-start items-center">
                                             <td class="w-1/6"><img class="w-10 h-10 object-cover rounded-xl" src="src/img/demons-souls.jpg"></td>
@@ -113,7 +113,7 @@
                                                 <h3 class="text-xs">14 Nov</h3>
                                                 <h3 class="text-xs">2020</h3>
                                             </td>
-                                            <td class="w-2/6 flex justify-center items-center"><button class="w-[100px] h-8 border-2 border-slate-300 text-slate-300 rounded-lg cursor-pointer">Installed</button></td>
+                                            <td class="w-2/6 flex justify-center items-center"><button class="w-[90px] lg:w[100px] h-8 border-2 border-slate-300 text-slate-300 rounded-lg cursor-pointer">Installed</button></td>
                                         </tr>
                                         <tr class="w-full h-1/3 flex justify-start items-center">
                                             <td class="w-1/6"><img class="w-10 h-10 object-cover rounded-xl" src="src/img/overwatch.jpeg"></td>
@@ -125,7 +125,7 @@
                                                 <h3 class="text-xs">20 Oct</h3>
                                                 <h3 class="text-xs">2020</h3>
                                             </td>
-                                            <td class="w-2/6 flex justify-center items-center"><button class="w-[130px] h-8 border-2 border-blue-600 text-blue-600 rounded-lg cursor-pointer hover:border-blue-500 hover:text-blue-500">Download</button></td>
+                                            <td class="w-2/6 flex justify-center items-center"><button class="w-[100px] lg:w-[130px] h-8 border-2 border-blue-600 text-blue-600 rounded-lg cursor-pointer hover:border-blue-500 hover:text-blue-500">Download</button></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -133,7 +133,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="width: 30%" class="hidden w-300 my-4 p-4 bg-white bg-opacity-10 backdrop-blur-sm rounded-xl shadow-all lg:block">
+                <div class="w-full lg:w-[30%] my-4 p-4 bg-white bg-opacity-10 backdrop-blur-sm rounded-xl shadow-all lg:block">
                     <div class="w-full flex justify-between items-center mb-2">
                         <h2 class="text-slate-300">Social</h2>
                         <i class='bx bx-chevron-down text-xl text-slate-300'></i>
@@ -225,7 +225,7 @@
                     <div class="w-full my-6">
                         <div class="w-full bg-white bg-opacity-10 backdrop-blur-sm shadow-all rounded-xl">
                             <div class="w-full flex justify-between px-6 pt-4 pb-2">
-                                <div class="w-4/6"> 
+                                <div class="w-4/6">
                                     <h3 class="text-xs font-gilroy-light">Party Chat</h3>
                                     <h3 class="text-xs">Scott Pilgrim + 7 others</h3>
                                 </div>
